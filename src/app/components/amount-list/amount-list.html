@@ -1,0 +1,21 @@
+<div class="amount-list">
+    <div *ngIf="isLoading">Yükleniyor...</div>
+
+    <div *ngIf="!isLoading">
+        <p>Sayaç Adı Seçiniz:</p>
+        <select [(ngModel)]="selectedMeter" (change)="getAmountInfo()">
+            <option value="S1">S1</option>
+            <option value="S2">S2</option>
+            <option value="S3">S3</option>
+        </select>
+
+        <p>Müşterinin Toplam Fatura Tutarı:</p>
+        <span class="amount-text">
+            {{ amountInfo?.customerInvoiceAmount }}
+        </span>
+        <p>Belediyelere Ödenecek Toplam Tutar:</p>
+        <span class="amount-text">
+            {{ amountInfo?.municipalityAmount }}
+        </span>
+    </div>
+</div>

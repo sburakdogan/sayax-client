@@ -1,0 +1,32 @@
+.amount-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 206, 206);
+    max-width: 400px;
+    margin: 0px auto;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+p {
+    color: rgb(41, 41, 41);
+}
+
+.amount-text {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+p {
+    font-size: large;
+}
