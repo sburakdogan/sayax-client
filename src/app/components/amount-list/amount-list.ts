@@ -13,12 +13,11 @@ import { FormsModule } from '@angular/forms';
 export class AmountList implements OnInit {
   amountInfo: Amount | null = null;
   isLoading: boolean = true;
-  selectedMeter: string = 'S1'; // Başlangıç değeri S1
+  selectedMeter: string = 'S1';
 
   constructor(private amountService: AmountService) {}
 
   ngOnInit(): void {
-    // Component yüklenince ilk isteği atıyoruz
     this.getAmountInfo();
   }
 
